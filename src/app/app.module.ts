@@ -16,12 +16,14 @@ import { httpInterceptorProviders } from './shared/interceptors';
 import { HttpErrorHandler } from './shared/error-handler/http-error-handler.service';
 import { DataService } from './shared/services/DataService.service';
 import { MessageService } from './shared/error-handler/message.service';
+import { NewComponentComponent } from './new-component/new-component.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     AppStartComponent,
-    AppRoute404
+    AppRoute404,
+    NewComponentComponent
   ],
   imports: [
     BrowserModule,

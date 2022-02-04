@@ -4,9 +4,10 @@ import { LocationStrategy, HashLocationStrategy } from '@angular/common';
 
 import { AppStartComponent } from './app-start.component';
 import { AppRoute404, AppRouteGuard } from './app-route.guard';
+import { NewComponentComponent } from './new-component/new-component.component';
 
 const routes: Routes = [
-  { path: '', component: AppStartComponent},
+  { path: '', component: NewComponentComponent},
   {
     path: 'home',
     canActivateChild: [AppRouteGuard],
